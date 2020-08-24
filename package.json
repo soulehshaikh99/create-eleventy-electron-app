@@ -1,0 +1,69 @@
+{
+  "name": "create-eleventy-electron-app",
+  "version": "0.1.0",
+  "description": "A simple starter project to get up and developing quickly with the blend of Eleventy and Electron JS for building a Native Desktop App on various OS Platforms like Windows, Linux and macOS using Electron Builder.",
+  "main": "main.js",
+  "author": "Souleh Shaikh <author.souleh@thegeekytutor.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soulehshaikh99/create-eleventy-electron-app"
+  },
+  "bugs": {
+    "url": "https://github.com/soulehshaikh99/create-eleventy-electron-app/issues"
+  },
+  "build": {
+    "icon": "src/assets/favicon.png",
+    "productName": "Eleventy and Electron App",
+    "files": [
+      "build/**/*",
+      "main.js"
+    ],
+    "win": {},
+    "linux": {},
+    "mac": {}
+  },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "electron": "wait-on http://localhost:8080 && electron .",
+    "electron-dev": "concurrently \"yarn run dev\" \"yarn run electron\"",
+    "preelectron-pack": "yarn run build",
+    "electron-pack": "electron-builder"
+  },
+  "dependencies": {
+    "electron-serve": "^1.0.0"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.3",
+    "concurrently": "^5.3.0",
+    "electron": "^9.2.1",
+    "electron-builder": "^22.8.0",
+    "eleventy": "^1.0.6",
+    "html-minifier": "^4.0.0",
+    "wait-on": "^5.2.0"
+  },
+  "keywords": [
+    "cross-platform",
+    "native-app",
+    "installed-app",
+    "desktop-applications",
+    "windows",
+    "linux",
+    "macos",
+    "html",
+    "css",
+    "javascript",
+    "front-end",
+    "eleventy",
+    "electron",
+    "electron-builder",
+    "electron-serve",
+    "concurrently",
+    "wait-on",
+    "blog-engine",
+    "documentation-tool",
+    "static-site-generator"
+  ]
+}
