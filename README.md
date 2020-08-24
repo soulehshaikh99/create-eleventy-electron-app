@@ -134,7 +134,7 @@ $ touch .eleventy.js
 ```
 
 
-#### 10) Paste the below code in .eleventy.js file
+#### 9) Paste the below code in .eleventy.js file
 
 ```js
 // Imports useful for minifying functionality
@@ -174,7 +174,7 @@ module.exports = function (eleventyConfig) {
 ```
 
 
-#### 9) Create main.js file (serves as entry point for Electron App's Main Process)
+#### 10) Create main.js file (serves as entry point for Electron App's Main Process)
 
 ```bash
 # Windows Users
@@ -185,7 +185,7 @@ $ fsutil file createnew main.js 0
 $ touch main.js
 ```
 
-#### 10) Paste the below code in main.js file
+#### 11) Paste the below code in main.js file
 
 ```js
 // Modules to control application life and create native browser window
@@ -285,7 +285,7 @@ app.on("activate", function () {
 }
 ```
 
-#### 12) Add the following configuration in `package.json`
+#### 13) Add the following configuration in `package.json`
 
 **Note:** build configuration is used by electron-builder, modify it if you wish to add more packaging and native distribution options for different OS Platforms.
 
